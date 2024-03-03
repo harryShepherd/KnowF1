@@ -26,7 +26,7 @@ header {
   flex-wrap: wrap;	
 }
 
-h1 {
+#knowf1 {
   margin: 0;
   padding: 10px;
   display: flex;
@@ -64,6 +64,7 @@ h1 {
 }
 
 .latest-article-wrapper {
+  float: left;
   cursor: pointer;
   margin-left: 50px;
   margin-top: 50px;
@@ -76,7 +77,7 @@ h1 {
   font-size: 30px;
   margin: 0;
   padding: 10px;
-  padding-bottom: 0;
+  padding-bottom: 1px;
   max-width: 450px;
 
   border: 5px red solid;
@@ -180,4 +181,42 @@ a::before {
 
 a:hover::before {
   transform: scaleX(1);
+}
+
+.other-news-wrapper {
+  float: right;
+  width: 430px;
+
+  margin-right: 75px;
+  margin-top: 50px;
+
+}
+
+.other-news-title-wrapper {
+  background-color: red;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#other-news-title {
+  font-family: Gridstar;
+  font-size: 35px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.other-news-scroll-wrapper {
+  height: 490px;
+  overflow-y: scroll;
+
+  border-right: red 5px solid;
+  border-left: red 5px solid;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  padding-right: 5px;
+  padding-left: 5px;
 }
