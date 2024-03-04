@@ -210,7 +210,7 @@ a:hover::before {
 }
 
 .f1-standings-scroll-wrapper {
-  height: 430px;
+  height: 440px;
   overflow-y: scroll;
 
   border-right: red 5px solid;
