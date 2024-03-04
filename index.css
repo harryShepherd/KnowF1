@@ -41,7 +41,7 @@ header {
   padding-top: 50px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1090px;
+  max-width: 85%;
   min-height: 4000px;
 
   background-color: white;
@@ -68,7 +68,7 @@ header {
   cursor: pointer;
   margin-left: 50px;
   margin-top: 50px;
-  max-width: 450px;
+  max-width: 700px;
 }
 
 #latest-article-title {
@@ -77,8 +77,8 @@ header {
   font-size: 30px;
   margin: 0;
   padding: 10px;
-  padding-bottom: 1px;
-  max-width: 450px;
+  padding-bottom: 10px;
+  max-width: 700px;
 
   border: 5px red solid;
   border-bottom: 0px;
@@ -93,7 +93,7 @@ header {
   margin: 0;
   padding: 10px;
   padding-top: 0;
-  max-width: 450px;
+  max-width: 700px;
 
   border-left: 5px red solid;
   border-right: 5px red solid;
@@ -102,6 +102,7 @@ header {
 #latest-article-img {
   margin: 0;
   padding: 0;
+  max-width: 700px;
 }
 
 .latest-article-img-wrapper {
@@ -183,24 +184,24 @@ a:hover::before {
   transform: scaleX(1);
 }
 
-.other-news-wrapper {
+.f1-standings-wrapper {
   float: right;
   width: 430px;
 
-  margin-right: 75px;
+  margin-right: 50px;
   margin-top: 50px;
 
 }
 
-.other-news-title-wrapper {
+.f1-standings-title-wrapper {
   background-color: red;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
-#other-news-title {
+#f1-standings-title {
   font-family: Gridstar;
-  font-size: 35px;
+  font-size: 30px;
   color: white;
   margin: 0;
   text-align: center;
@@ -208,8 +209,8 @@ a:hover::before {
   padding-bottom: 12px;
 }
 
-.other-news-scroll-wrapper {
-  height: 490px;
+.f1-standings-scroll-wrapper {
+  height: 430px;
   overflow-y: scroll;
 
   border-right: red 5px solid;
@@ -219,4 +220,73 @@ a:hover::before {
 
   padding-right: 5px;
   padding-left: 5px;
+}
+
+.f1-standings {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.f1-standings p {
+  display: inline flex; 
+  text-align: right;
+  font-family: Gridstar;
+  font-size: 17px;
+  vertical-align: top;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.f1-standing-top-wrapper {
+  background-color: white;
+  display: inline flex;
+  border-left: solid red 5px;
+  border-right: solid red 5px;
+  border-bottom: solid red 2px;
+  width: 420px;
+}
+
+.f1-standing-top-wrapper p {
+  font-family: Gridstar;
+  font-size: 24px;
+  margin: 0;
+  padding: 5px;
+  display: inline flex;
+  margin: auto;
+}
+
+#drivers {
+  margin-left: 10px;
+}
+
+#points {
+  float: right;
+  margin-right: 10px;
+}
+
+.f1-standings img {
+  display: flex inline;
+  border-radius: 50%;
+  width: 50px;
+}
+
+#rbr img {
+  border: 4px #3671c6 solid;
+}
+
+#ferrari img {
+  border: 4px #e8002e solid;
+}
+
+#mercedes img {
+  border: 4px #29f4d2 solid;
+}
+
+#mclaren img {
+  border: 4px #ff8001 solid;
+}
+
+#aston img {
+  border: 4px #239971 solid;
 }
