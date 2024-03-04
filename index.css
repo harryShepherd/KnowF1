@@ -5,7 +5,6 @@
 
 body {
   margin: 0;
-  /*background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x2.png"); */
   background-image: url("img/cross.png"); 
   background-repeat: repeat;
   background-attachment: fixed;
@@ -15,7 +14,6 @@ body {
 header {
   margin-top: 0px;
   top: 0;
-  position: fixed;
   width: 100%;
   padding: 0px;
   text-align: center;
@@ -38,7 +36,6 @@ header {
 
 .content-wrapper {
   display: block;
-  padding-top: 50px;
   margin-right: auto;
   margin-left: auto;
   max-width: 85%;
@@ -48,7 +45,7 @@ header {
 }
 
 .heading {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-left: 50px;
 }
 
