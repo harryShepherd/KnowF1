@@ -77,10 +77,9 @@ header {
 
 .content-wrapper {
   display: block;
-  padding-top: 50px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1090px;
+  max-width: 85%;
   min-height: 4000px;
   background-color: white;
 }
@@ -89,4 +88,5 @@ header {
   font-family: Gridstar;
   font-size: 50px;
   color: black;
+  margin-top: 0;
 }
