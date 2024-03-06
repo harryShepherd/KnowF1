@@ -183,7 +183,7 @@ a:hover::before {
 
 .f1-standings-wrapper {
   float: right;
-  width: 430px;
+  width: 30%;
 
   margin-right: 50px;
   margin-top: 50px;
@@ -231,8 +231,8 @@ a:hover::before {
   font-family: Gridstar;
   font-size: 17px;
   vertical-align: top;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .f1-standing-top-wrapper {
@@ -241,14 +241,14 @@ a:hover::before {
   border-left: solid red 5px;
   border-right: solid red 5px;
   border-bottom: solid red 2px;
-  width: 420px;
+  width: -webkit-fill-available;
 }
 
 .f1-standing-top-wrapper p {
   font-family: Gridstar;
   font-size: 24px;
   margin: 0;
-  padding: 5px;
+  padding: 0px;
   display: inline flex;
   margin: auto;
 }
