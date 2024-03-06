@@ -65,7 +65,7 @@ header {
   cursor: pointer;
   margin-left: 50px;
   margin-top: 50px;
-  max-width: 700px;
+  width: 60%;
 }
 
 #latest-article-title {
@@ -75,7 +75,6 @@ header {
   margin: 0;
   padding: 10px;
   padding-bottom: 10px;
-  max-width: 700px;
 
   border: 5px red solid;
   border-bottom: 0px;
@@ -90,7 +89,6 @@ header {
   margin: 0;
   padding: 10px;
   padding-top: 0;
-  max-width: 700px;
 
   border-left: 5px red solid;
   border-right: 5px red solid;
@@ -99,7 +97,7 @@ header {
 #latest-article-img {
   margin: 0;
   padding: 0;
-  max-width: 700px;
+  width: -webkit-fill-available;
 }
 
 .latest-article-img-wrapper {
@@ -107,6 +105,8 @@ header {
   border-bottom-left-radius: 10px;
   border-left: 5px red solid;
   border-right: 5px red solid;
+  width: -webkit-fill-available;
+  max-height: 50%;
 }
 
 .latest-article-wrapper:hover #latest-article-img {
