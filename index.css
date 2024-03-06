@@ -225,6 +225,11 @@ a:hover::before {
   margin: 0;
 }
 
+.f1-standings li {
+  border-bottom: 1px black dotted;
+  padding-top: 1%;
+}
+
 .f1-standings p {
   display: inline flex; 
   text-align: right;
