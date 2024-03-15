@@ -7,20 +7,97 @@
   
     <article>
       <header>
-        <h1>KNOWF1</h1>
+        <h1 id="knowf1">KNOWF1</h1>
+		<ul id="navigation">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="drivers.html">Drivers</a></li>
+			<li><a href="tracks.html">Tracks</a></li>
+			<li><a href="2024-season.html">2024 Season</a></li>
       </header>
     </article>
 	
-    <div class="main">
-      <h2>Under Construction</h2>
-      <p>We'll come back to you</p>
+    <div class="content-wrapper">
+
+      <div class="heading">
+        <p id="heading-text">Latest News</p>
+      </div>
+
+      <div class="latest-article-wrapper" onclick="window.location='latest-article.html'">
+        <p id="latest-article-title">Ollie Bearman to replace Carlos Sainz for Saudi Arabia GP</p> 
+        <p id="latest-article-date">8 Mar 2024</p>
+        <div class="latest-article-img-wrapper">
+        <img id="latest-article-img" src="https://pbs.twimg.com/media/GIJfXMTWwAAR8QC?format=jpg&name=medium"/>
+        </div>
+      </div>
+
+      <div class="f1-standings-wrapper">
+        <div class="f1-standings-title-wrapper">
+          <p id="f1-standings-title">Current F1 Standing</p>
+        </div>
+        <div class="f1-standing-top-wrapper">
+          <p id="drivers">Drivers</p>
+          <p id="points">Points</p>
+        </div>
+        <div class="f1-standings-scroll-wrapper">
+          <ul class="f1-standings">
+            <li id="rbr">
+              <img src="img/verstappen.png"/>
+              <p>Max Verstappen</p>
+              <p id="points">51</p>
+            </li>
+            <li id="rbr">
+              <img src="img/perez.png"/>
+              <p>Sergio Perez</p>
+              <p id="points">36</p>
+            </li>
+            <li id="ferrari">
+              <img src="img/leclerc.png"/>
+              <p>Charles Leclerc</p>
+              <p id="points">28</p>
+            </li>
+            <li id="mercedes">
+              <img src="img/russell.png"/>
+              <p>George Russell<p>
+              <p id="points">18</p>
+            </li>
+            <li id="mclaren">
+              <img src="img/piastri.png"/>
+              <p>Oscar Piastri</p>
+              <p id="points">16</p>
+            </li>
+            <li id="ferrari">
+              <img src="img/sainz.png"/>
+              <p>Carlos Sainz</p>
+              <p id="points">15</p>
+            </li>
+            <li id="aston">
+              <img src="img/alonso.png"/>
+              <p>Fernando Alonso</p>
+              <p id="points">12</p>
+            </li>
+            <li id="mclaren">
+              <img src="img/norris.png"/>
+              <p>Lando Norris</p>
+              <p id="points">12</p>
+            </li>
+            <li id="mercedes">
+              <img src="img/hamilton.png"/>
+              <p>Lewis Hamilton</p>
+              <p id="points">8</p>
+            </li>
+            <li id="ferrari"/>
+              <img src="img/bearman.png"/>
+              <p>Oliver Bearman</p>
+              <p id="points">6</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="other-news-title-wrap">
+          <p id="other-news-title">Other News</p>
+        </div>
     </div>
-	
-	<article>
-	<footer id="footer">
-	<p id="github">Follow Along On <a id="github-link" href="https://github.com/harryShepherd/KnowF1">Github</a></p>
-	</footer>
-	</article>
-	
   </body>
 </html>

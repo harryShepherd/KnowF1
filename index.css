@@ -5,53 +5,157 @@
 
 body {
   margin: 0;
-  background-image: url("https://www.formula1.com/etc/designs/fom-website/images/patterns/plus-x2.png");
-  /* background-image: url("img/cross.png"); */
+  background-image: url("img/cross.png"); 
   background-repeat: repeat;
+  background-attachment: fixed;
   background-size: 10px 10px;
 }
 
 header {
   margin-top: 0px;
   top: 0;
-  position: static;
+  width: 100%;
   padding: 0px;
   text-align: center;
   background-color: red;
-  box-shadow: 0 -6px 5px 10px rgba(0,0,0,0.5);
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;	
 }
 
-h1 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+#knowf1 {
+  margin: 0;
+  padding: 10px;
+  display: flex;
   color: white;
   font-size: 40px;
   font-family: Gridstar;
   text-align: left;
-  margin-bottom: 0px;
 }
 
-.main {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.content-wrapper {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 85%;
+  min-height: 4000px;
+
+  background-color: white;
 }
 
-h2 {
-  margin-top: 10px;
+.heading {
+  padding-top: 25px;
+  padding-left: 50px;
+}
+
+#heading-text {
   color: black;
-  font-size: 75px;
   font-family: Gridstar;
-  text-align: center;
+  font-size: 50px;
+
+  border-bottom: 5px solid red;
+  width: 450px;
+
+  margin: 0;
 }
 
-p {
+.latest-article-wrapper {
+  float: left;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 60%;
+  height: 60%;
+}
+
+#latest-article-title {
   color: black;
-  font-size: 40px;
   font-family: Gridstar;
-  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding: 10px;
+  padding-bottom: 10px;
+
+  border: 5px red solid;
+  border-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#latest-article-date {
+  color: black;
+  height: 5%;
+  font-family: Gridstar;
+  font-size: 15px;
+  margin: 0;
+  padding: 10px;
+  padding-top: 0;
+
+  border-left: 5px red solid;
+  border-right: 5px red solid;
+}
+
+#latest-article-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.latest-article-img-wrapper {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-left: 5px red solid;
+  border-right: 5px red solid;
+  width: -webkit-fill-available;
+  height: 80%;
+}
+
+.latest-article-wrapper:hover #latest-article-img {
+  transform: scale(1.05);
+}
+
+.latest-article-wrapper:hover #latest-article-title {
+  text-decoration: underline;
+}
+
+.latest-article-img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.latest-article-img-wrapper img {
+  transition: all 1s ease;
+  vertical-align: middle;
+}
+
+#navigation {
+	list-style: none;
+	margin: 0;
+	padding: 10px;
+	background: red;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex end;
+}
+
+#navigation a {
+	text-decoration: none;
+	display: block;
+	padding: 0;
+	padding-bottom: 0;
+	color: white;
+	font-family: Gridstar;
+	position:relative;
+}
+
+#navigation li {
+	padding: 1em;
+}
+
+#navigation a::before {
+	background-color: white;
 }
 
 #footer {
@@ -62,17 +166,7 @@ p {
   text-align: center;
 }
 
-#github {
-	color: black;
-}
-
-#github-link {
-	position:relative;
-	text-decoration: none;
-	color: black;
-}
-
-#github-link::before {
+a::before {
   content: "";
   position: absolute;
   display: block;
@@ -86,13 +180,136 @@ p {
   transition: transform 0.3s ease;
 }
 
-#github-link:hover::before {
+a:hover::before {
   transform: scaleX(1);
 }
 
+.f1-standings-wrapper {
+  float: right;
+  width: 30%;
 
+  margin-right: 50px;
+  margin-top: 50px;
 
-#github {
-	font-size: 20px;
 }
 
+.f1-standings-title-wrapper {
+  background-color: red;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#f1-standings-title {
+  font-family: Gridstar;
+  font-size: 1.5em;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.f1-standings-scroll-wrapper {
+  height: 49%;
+  overflow-y: scroll;
+
+  border-right: red 5px solid;
+  border-left: red 5px solid;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.f1-standings {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.f1-standings li {
+  border-bottom: 1px black dotted;
+  padding-top: 1%;
+}
+
+.f1-standings p {
+  display: inline flex; 
+  text-align: right;
+  font-family: Gridstar;
+  font-size: 1em;
+  vertical-align: top;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.f1-standing-top-wrapper {
+  background-color: white;
+  display: inline flex;
+  border-left: solid red 5px;
+  border-right: solid red 5px;
+  border-bottom: solid red 2px;
+  width: -webkit-fill-available;
+}
+
+.f1-standing-top-wrapper p {
+  font-family: Gridstar;
+  font-size: 24px;
+  margin: 0;
+  padding: 0px;
+  display: inline flex;
+  margin: auto;
+}
+
+#drivers {
+  margin-left: 10px;
+}
+
+#points {
+  float: right;
+  margin-right: 10px;
+}
+
+.f1-standings img {
+  display: flex inline;
+  border-radius: 50%;
+  width: 50px;
+}
+
+#rbr img {
+  border: 4px #3671c6 solid;
+}
+
+#ferrari img {
+  border: 4px #e8002e solid;
+}
+
+#mercedes img {
+  border: 4px #29f4d2 solid;
+}
+
+#mclaren img {
+  border: 4px #ff8001 solid;
+}
+
+#aston img {
+  border: 4px #239971 solid;
+}
+
+.other-news-title-wrap {
+  width: 92%;
+  border-bottom: 5px red solid;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#other-news-title {
+  font-family: Gridstar;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}

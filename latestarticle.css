@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Gridstar;
+  src: url('Gridstar-Regular.otf');
+}
+
+body {
+  margin: 0;
+  background-image: url("img/cross.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 10px 10px;
+}
+
+header {
+  margin-top: 0;
+  top: 0;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  background-color: red;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#knowf1 {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  color: white;
+  font-size: 40px;
+  font-family: Gridstar;
+  text-align: left;
+}
+
+#navigation {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  background: red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex end;
+}
+
+#navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 0;
+  color: white;
+  font-family: Gridstar;
+  position: relative;
+}
+
+#navigation li {
+  padding: 1em;
+}
+
+#navigation a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+#navigation a:hover::before {
+  transform: scaleX(1);
+}
+
+.content-wrapper {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 85%;
+  min-height: 4000px;
+  background-color: white;
+}
+
+#title {
+  font-family: Gridstar;
+  font-size: 50px;
+  color: black;
+  margin-top: 0;
+}
