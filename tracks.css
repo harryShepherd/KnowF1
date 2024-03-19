@@ -89,11 +89,11 @@ header {
   font-size: 50px;
   color: black;
   margin: 0;
-  text-decoration: underline solid 5px red;
+  border-bottom: 5px solid red;
+  width: 450px;
 }
 
 .title-wrapper {
-  margin-left: 75px;
-  margin-right: 75px;
-  margin-top: 75px;
+  margin-top: 25px;
+  margin-left: 50px;
 }
