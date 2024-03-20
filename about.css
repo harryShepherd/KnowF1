@@ -3,6 +3,11 @@
   src: url('Gridstar-Regular.otf');
 }
 
+@font-face {
+  font-family: Garet;
+  src: url('Garet-Book.otf');
+}
+
 body {
   margin: 0;
   background-image: url("img/cross.png");
@@ -76,7 +81,7 @@ header {
 }
 
 .content-wrapper {
-  display: flex;
+  display: flow;
   margin-right: auto;
   margin-left: auto;
   max-width: 85%;
@@ -97,4 +102,22 @@ header {
 .title-wrapper {
   padding-top: 25px;
   padding-left: 50px;
+}
+
+#header-1 {
+  font-family: Gridstar;
+  font-size: 40px;
+  color: black;
+  margin: 0;
+
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+#content-1 {
+  font-family: Garet;
+  font-size: 20px;
+
+  padding-left: 50px;
+  padding-right: 50px;
 }
