@@ -100,7 +100,7 @@ header {
 
 .driver-grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -111,28 +111,140 @@ header {
 }
 
 .grid-item {
-  display: inline-grid;
+  display: block;
 
-  border-top: red 2px solid;
-  border-right: red 2px solid;
+  border-top: black 2px solid;
+  border-right: black 2px solid;
 
   border-top-right-radius: 25px;
   
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 img {
   width: 90%;
 }
 
+.number {
+  width: 20%;
+  margin-top: 5%;
+}
+
 .grid-item p {
   font-family: Gridstar;
   text-align: right;
-  padding-right: 15px;
+  width: fit-content;
+  display: inline-block;
+  position: relative;
+  margin-left: auto;
+  margin-right: 10%;
+  float: right;
 }
 
-.grid-item:hover {
-  border-top: white 2px solid;
-  border-right: white 2px solid;
+#redbull:hover {
+  border-right: #3671c6 2px solid;
+  border-top: #3671c6 2px solid;
 }
 
+#redbull p::before {
+  background-color: #3671c6;
+}
+
+#ferrari:hover {
+  border-right: #e8002e 2px solid;
+  border-top: #e8002e 2px solid;
+}
+
+#ferrari p::before {
+  background-color: #e8002e;
+}
+
+#mercedes:hover {
+  border-right: #29f4d2 2px solid;
+  border-top: #29f4d2 2px solid;
+}
+
+#mercedes p::before {
+  background-color: #29f4d2;
+}
+
+#mclaren:hover {
+  border-right: #ff8001 2px solid;
+  border-top: #ff8001 2px solid;
+}
+
+#mclaren p::before {
+  background-color: #ff8001;
+}
+
+#aston:hover {
+  border-right: #239971 2px solid;
+  border-top: #239971 2px solid;
+}
+
+#aston p::before {
+  background-color: #239971;
+}
+
+#haas:hover {
+  border-right: #b6babd 2px solid;
+  border-top: #b6babd 2px solid;
+}
+
+#haas p::before {
+  background-color: #b6babd;
+}
+
+#williams:hover {
+  border-right: #63c4ff 2px solid;
+  border-top: #63c4ff 2px solid;
+}
+
+#williams p::before {
+  background-color: #63c4ff;
+}
+
+#sauber:hover {
+  border-right: #52e252 2px solid;
+  border-top: #52e252 2px solid;
+}
+
+#sauber p::before {
+  background-color: #52e252;
+}
+
+#rb:hover {
+  border-right: #6592ff 2px solid;
+  border-top: #6592ff 2px solid;
+}
+
+#rb p::before {
+  background-color: #6592ff;
+}
+
+#alpine:hover {
+  border-right: #0093cc 2px solid;
+  border-top: #0093cc 2px solid;
+}
+
+#alpine p::before {
+  background-color: #0093cc;
+}
+
+.grid-item p::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3671c6;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover > p::before {
+  transform: scaleX(1);
+}
