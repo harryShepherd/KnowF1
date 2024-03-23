@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="tracks.css">
   </head>
 
-  <body>
+
+  <body> 
 
     <article>
       <header>
@@ -22,5 +23,160 @@
       <div class="title-wrapper">
         <p id="title">Tracks</p>
       </div>
+      <div class="next-race-wrapper">
+        <p id="next-race-title">Next GP:</p>
+      </div>
+      <div class="track-grid-wrapper">
+        <div class="grid-item">
+          <p id="track-title">Bahrain</p>
+          <img id="flag" src="img/flags/bahrain.png"/>
+          <img src="img/tracks/bahrain.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Saudi Arabia</p>
+          <img id="flag" src="img/flags/saudi-arabia.png"/>
+          <img src="img/tracks/sauri_arabia.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Australia</p>
+          <img id="flag" src="img/flags/australia.png"/>
+          <img src="img/tracks/australia.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Japan</p>
+          <img id="flag" src="img/flags/japan.png"/>
+          <img src="img/tracks/japan.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">China</p>
+          <img id="flag" src="img/flags/china.png"/>
+          <img src="img/tracks/china.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Miami</p>
+          <img id="flag" src="img/flags/usa.png"/>
+          <img src="img/tracks/miami.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Italy</p>
+          <img id="flag" src="img/flags/italy.png"/>
+          <img src="img/tracks/imola.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Monaco</p>
+          <img id="flag" src="img/flags/monaco.png"/>
+          <img src="img/tracks/monaco.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Canada</p>
+          <img id="flag" src="img/flags/canada.png"/>
+          <img src="img/tracks/canada.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Spain</p>
+          <img id="flag" src="img/flags/spain.png"/>
+          <img src="img/tracks/spain.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Austria</p>
+          <img id="flag" src="img/flags/austria.png"/>
+          <img src="img/tracks/austria.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Great Britain</p>
+          <img id="flag" src="img/flags/united-kingdom.png"/>
+          <img src="img/tracks/uk.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Hungary</p>
+          <img id="flag" src="img/flags/hungary.png"/>
+          <img src="img/tracks/hungary.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Belgium</p>
+          <img id="flag" src="img/flags/belgium.png"/>
+          <img src="img/tracks/belgium.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Netherlands</p>
+          <img id="flag" src="img/flags/netherlands.png"/>
+          <img src="img/tracks/netherlands.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Italy</p>
+          <img id="flag" src="img/flags/italy.png"/>
+          <img src="img/tracks/monza.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Azerbaijan</p>
+          <img id="flag" src="img/flags/azerbaijan.png"/>
+          <img src="img/tracks/azerbaijan.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Singapore</p>
+          <img id="flag" src="img/flags/singapore.png"/>
+          <img src="img/tracks/singapore.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">United States</p>
+          <img id="flag" src="img/flags/usa.png"/>
+          <img src="img/tracks/usa.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Mexico</p>
+          <img id="flag" src="img/flags/mexico.png"/>
+          <img src="img/tracks/mexico.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Brazil</p>
+          <img id="flag" src="img/flags/brazil.png"/>
+          <img src="img/tracks/brazil.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">United States</p>
+          <img id="flag" src="img/flags/usa.png"/>
+          <img src="img/tracks/las_vegas.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Qatar</p>
+          <img id="flag" src="img/flags/qatar.png"/>
+          <img src="img/tracks/qatar.png"/>
+        </div>
+        <div class="grid-item">
+          <p id="track-title">Abu Dhabi</p>
+          <img id="flag" src="img/flags/abu_dhabi.png"/>
+          <img src="img/tracks/abu_dhabi.png"/>
+        </div>
+      </div>
     </div>
   </body>
+  <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 24, 2024 04:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+     // Time calculations for days, hours, minutes and seconds
+     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Output the result in an element with id="demo"
+      document.getElementById("next-race-title").innerHTML = "Australian GP: " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("next-race-title").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+</html>

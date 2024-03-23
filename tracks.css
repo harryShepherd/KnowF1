@@ -3,6 +3,11 @@
   src: url('Gridstar-Regular.otf');
 }
 
+@font-face {
+  font-family: Garet;
+  src: url('Garet-Book.otf');
+}
+
 body {
   margin: 0;
   background-image: url("img/cross.png");
@@ -76,7 +81,7 @@ header {
 }
 
 .content-wrapper {
-  display: flex;
+  display: flow;
   margin-right: auto;
   margin-left: auto;
   max-width: 85%;
@@ -94,6 +99,66 @@ header {
 }
 
 .title-wrapper {
-  margin-top: 25px;
-  margin-left: 50px;
+  display: block;
+  padding-top: 25px;
+  padding-left: 50px;
+}
+
+.next-race-wrapper {
+  display: block;
+  border: 2px black solid;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+}
+
+#next-race-title {
+  font-family: Garet;
+  font-size: 25px;
+  text-align: center;
+  padding: 3%;
+}
+
+.track-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  margin: 25px;
+}
+
+.grid-item {
+  display: block;
+  border-top: black 2px solid;
+  border-right: black 2px solid;
+  border-top-right-radius: 25px;
+}
+
+.grid-item img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+.grid-item p {
+  font-size: 1.2em;
+}
+
+#track-title {
+  font-family: Gridstar;
+  margin-left: auto;
+  margin-right: 5%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#flag {
+  float: right;
+  display: inline-block;
+  width: 20%;
+  padding-right: 10%;
+  vertical-align: middle;
 }
