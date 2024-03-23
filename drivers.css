@@ -110,11 +110,11 @@ header {
 }
 
 .grid-item {
+  cursor: pointer;
   display: block;
 
   border-top: black 2px solid;
   border-right: black 2px solid;
-
   border-top-right-radius: 25px;
   
   transition: 0.2s;
@@ -130,6 +130,7 @@ img {
 }
 
 .grid-item p {
+  font-size: 1.2em;
   font-family: Gridstar;
   text-align: right;
   width: fit-content;
